@@ -63,7 +63,7 @@ test('it can remove an existing item', async () => {
     await db.removeItem(ITEM.id);
 
     const items = await db.getItems();
-    expect(items.length).toBe(1);
+    expect(items.length).toBe(0);
 });
 
 
